@@ -8,4 +8,6 @@ document.getElementById('revealButton').addEventListener('click', function() {
     setTimeout(() => {
         document.body.style.backgroundColor = '#f0f8ff'; // Reset after a moment
     }, 2000);
+
+    document.getElementById("myAudio").play();
 });
