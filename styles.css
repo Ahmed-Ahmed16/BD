@@ -20,7 +20,7 @@ body {
   height: 100vh;
   background-color: #f0f8ff;
   font-family: "Arial", sans-serif;
-  background-image: url(images/emoji-2bc5da-1920x1080.png);
+  background-image: url("images/emoji-2bc5da-1920x1080.png");
   overflow: hidden; /* Prevent scrollbars */
 }
 
