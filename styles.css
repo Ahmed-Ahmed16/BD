@@ -1,0 +1,77 @@
+/* styles.css */
+
+* {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  max-width: 30%;
+  margin-inline: auto;
+  background: linear-gradient();
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8ff;
+  font-family: "Arial", sans-serif;
+  background-image: url(/emoji-2bc5da-1920x1080.png);
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 20px;
+  color: white;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#birthdayMessage {
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#birthdayMessage.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+p {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 50%;
+  text-align: center;
+  margin-inline: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+span {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: dodgerblue;
+}
+
+#first {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
