@@ -4,11 +4,14 @@
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 400;
   font-style: normal;
+  box-sizing: border-box; /* Added for consistent box sizing */
 }
+
 h1 {
-  max-width: 30%;
+  max-width: 90%; /* Adjusted for better mobile view */
   margin-inline: auto;
-  font-size: 3rem;
+  background: linear-gradient();
+  font-size: 2.5rem; /* Slightly smaller for mobile */
   font-weight: 700;
   color: rgb(0, 0, 0);
 }
@@ -21,11 +24,13 @@ body {
   background-color: #f0f8ff;
   font-family: "Arial", sans-serif;
   background-image: url("images/emoji-2bc5da-1920x1080.png");
-  overflow: hidden; /* Prevent scrollbars */
+  background-size: cover; /* Ensure background covers the entire area */
+  background-position: center; /* Center the background image */
 }
 
 .container {
   text-align: center;
+  padding: 20px; /* Added padding for smaller screens */
 }
 
 button {
@@ -44,6 +49,7 @@ button:hover {
 }
 
 #birthdayMessage {
+  padding: 5rem;
   margin-top: 20px;
   opacity: 0;
   transform: translateY(-20px);
@@ -59,7 +65,7 @@ p {
   background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
   padding: 20px;
   border-radius: 10px;
-  max-width: 50%;
+  max-width: 90%; /* Adjusted for better mobile view */
   text-align: center;
   margin-inline: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
@@ -73,4 +79,43 @@ span {
 
 #first {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  button {
+    font-size: 18px; /* Adjust button font size */
+    padding: 12px 25px; /* Adjust button padding */
+  }
+
+  #birthdayMessage {
+    padding: 2rem; /* Less padding on mobile */
+  }
+
+  p {
+    padding: 15px; /* Less padding for paragraphs on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; /* Even smaller font size for very small screens */
+  }
+
+  button {
+    font-size: 16px; /* Adjust button font size further */
+    padding: 10px 20px; /* Adjust button padding further */
+  }
+
+  #birthdayMessage {
+    padding: 1rem; /* Less padding on very small screens */
+  }
+
+  p {
+    font-size: 0.9rem; /* Slightly smaller font size for paragraphs */
+  }
 }
